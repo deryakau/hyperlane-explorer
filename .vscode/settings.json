@@ -4,8 +4,8 @@
   },
   "files.exclude": {
     "**/*.js.map": true,
-    "**/*.js": {"when": "$(basename).ts"},
-    "**/*.map": {"when": "$(basename).map"},
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/*.map": { "when": "$(basename).map" }
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -13,29 +13,13 @@
     "**/node_modules/*/**": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescript]": {
+  "[typescript], [typescriptreact], [html], [css], [json]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.tabSize": 2,
-  "editor.detectIndentation": false,
+  "editor.detectIndentation": false
 }
